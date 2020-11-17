@@ -85,14 +85,14 @@ input
 p
 {
     font-weight: normal;
-    color: grey;
+    color: black;
 }
 #economie, #familial, #Romantique, #animaux
 {
     border: 2px grey solid;
     border-radius: 30px;
     text-align: center;
-    box-shadow: 0px 2px 3px grey;
+    box-shadow: 0px 2px 3px rgb(226, 226, 226);
     margin: auto;
     width: 200px;
     height:50px ;
@@ -111,9 +111,9 @@ p
 }
 #info
 {
-    color: white;
-    border: 2px grey solid;
-    size: 5px;
+    color: blue;
+    border-radius: 50%;
+    text-align: center;
 }
 #hebergement
 {
@@ -121,12 +121,13 @@ p
     justify-content:space-between
        
 }
+
 #marseille
 {
-    border: 1px grey solid;
+    border: 1px rgb(226, 226, 226) solid;
     border-radius: 15px;  
     display: flex;
-    background-color: grey;
+    background-color: rgb(226, 226, 226);
     margin-right: 15px; 
     flex-wrap: wrap;
     padding: 20px 10px;
@@ -144,6 +145,7 @@ p
     overflow: hidden;
     z-index: 1;
     border: 4px white solid;
+    max-height: 35%;
 }
 .bloc img
 {
@@ -151,7 +153,6 @@ p
     width: 100%;
     position: absolute;
     z-index: 2;
-    
 }
 .bloc-conteineur
 {
@@ -159,6 +160,8 @@ p
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 80%;
+
 }
 .descriptionimage
 {
@@ -179,7 +182,7 @@ p
 }
 aside
 {
-    background-color: grey;
+    background-color: rgb(226, 226, 226);
     border-radius: 15px;
     padding: 20px 10px;
 }
@@ -189,6 +192,7 @@ aside
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
+    
 }
 .blocaside img
 {
@@ -205,4 +209,8 @@ aside
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.fas
+{
+    color:rgb(50, 109, 197)
 }
