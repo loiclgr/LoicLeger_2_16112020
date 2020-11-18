@@ -212,5 +212,10 @@ aside
 }
 .fas
 {
-    color:rgb(50, 109, 197)
+    color:rgb(50, 109, 197);
+}
+#plus
+{
+    font-family: raleway;
+    color: black;
 }
