@@ -1,12 +1,11 @@
-@font-face {
-  font-family: "raleway";
-  src: url(fonts/Raleway-VariableFont_wght.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
+
 body {
-  font-family: raleway;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
+}
+h2
+{
+  font-weight: 600;
 }
 .content
 {
@@ -186,6 +185,7 @@ aside {
 {
 color: black;
 margin: 25px 0px;
+padding-right: 40px ;
 }
 #titrepop
 {
@@ -246,67 +246,56 @@ margin: 25px 0px;
 }
 .activites h3
 {
-  margin: 0;
+
 }
-.bloc-conteuneur {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 35em;
-}
-.block
-{
-  padding: 0px;
-  width: 100%;
-  margin-bottom: 15px;
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-  box-shadow:0px 0px 11px 4px rgb(235, 235, 235);
-  border-radius: 15px;
-}
+
 .bloc-conteuneur
 {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  grid-template-rows: 220px 220px ;
-  grid-row-gap: 20px
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 220px 220px;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
 }
-#frioul
+.activites .bloc
+{
+  width: 100%;
+  height: 100%;
+}
+.full .blockimage
+{
+  width: 100%;
+  height: 100%
+}
+
+.bloc-conteuneur .bloc:nth-child(3)
 {
   grid-row-start: 2;
   grid-column-start:2; 
 }
-#parc
+.bloc-conteuneur .bloc:nth-child(2)
+{
+  grid-row-start: 1;
+  grid-column-start:2;
+  
+}
+.bloc-conteuneur .bloc:nth-child(1)
+{
+  grid-row: 1 / 3;
+}
+.bloc-conteuneur .bloc:nth-child(4)
+{
+  grid-row: 1 / 3;
+}
+.bloc-conteuneur .bloc:nth-child(5)
+{
+  grid-row-start: 1;
+  grid-column-start:4;
+}
+.bloc-conteuneur .bloc:nth-child(6)
 {
   grid-row-start: 2;
   grid-column-start:4;
-  
-}
-#calanques
-{
-  grid-row: 1 /span 2;
-}
-#port
-{
-  grid-row: 1 /span 2;
-}
-
-.block img
-{
-  width: auto;
-  height: 100%;
-}
-.block .blockimage 
-{
-  height: 85%;
-  width: 100%;
-}
-.block .bloc
-{
-  height: 50%;
-  width: 100%;
 }
 .activites .bloc
 {
@@ -381,10 +370,10 @@ footer
 
   .marseille, aside
   {
-    width: auto;
+    width: 100%;
     margin-bottom: 15px;
     border-radius: 0%;
-    
+    height: 100%;
   }
 .marseille
 {
@@ -397,45 +386,31 @@ footer
   padding: 0%;
   max-width: 90%;
 }
-.bloc
-{
-  width: 100%;
-}
+
 .bloc-conteneur
 {
   flex-direction: column;
   width: 100%;
 }
-.block
+.bloc
 {
   width: 100%;
-  
-}
-.block .blockimage img
-{
-  width: 100%;
-  height: auto;
- 
 }
 
 .bloc-conteuneur
 {
+  display: flex;
   flex-direction: column;
-  
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+  border: 0;
+  margin: auto;
+  padding: 0%;
+  max-width: 90%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+  
 footer 
 {
   width: auto;
