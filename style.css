@@ -1,15 +1,24 @@
 body {
   font-family: "Raleway", sans-serif;
-
+  margin: 0;
 }
 h2 {
   font-weight: 600;
+}
+*
+{
+  box-sizing: border-box;
 }
 .content {
   width: 90%;
   max-width: 1920px;
   margin: auto;
   margin-bottom: 35px;
+ 
+}
+.padmobil
+{
+  padding: 8px;
 }
 p {
   font-weight: normal;
@@ -23,6 +32,7 @@ p {
 .logosite {
 
   height: 40px;
+  padding: 8px;
 }
 nav
 {
@@ -52,8 +62,39 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  width: 90%;
+  max-width: 1920px;
+  margin: auto;
 }
-
+.blocsearch
+{
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(5, 104, 252);
+  align-items: center;
+}
+input
+{
+  border: 1px solid rgb(242, 242, 242);
+  padding: 9px;
+}
+button{
+background-color: rgb(5, 104, 252);
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    border: 0;
+    padding: 10px;
+  }
+#geo
+{
+  background-color: rgb(242, 242, 242);
+  padding: 8px;
+  border-radius: 9px 0px 0px 9px
+}
+#geo .fas
+{
+  color: black;
+}
 .filtres {
   display: flex;
   flex-direction: row;
@@ -101,6 +142,7 @@ header {
 {
   display: flex;
   align-items: flex-start;
+
 }
 .hebergement {
   display: flex;
@@ -167,6 +209,7 @@ aside {
 }
 #populaires {
   padding: 25px 25px;
+  
 }
 #titrepop i {
   color: black;
@@ -300,6 +343,8 @@ footer {
     flex-direction: column;
     align-items: start;
     position:relative;
+    width: 100%;
+    
   }
   nav{
     flex-direction: column-reverse;
@@ -317,6 +362,8 @@ nav li
 {
   flex:1;
   text-align: center;
+  border-top: 0;
+  border-bottom: 3px grey solid;
   
 }
 nav a {
@@ -326,7 +373,7 @@ nav a {
 li.current
 {
   border-top: 0;
-  border-bottom: 3px blue solid;
+  border-color: blue;
 }
   .filtres {
     flex-direction: column;
