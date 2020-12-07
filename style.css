@@ -462,7 +462,8 @@ li.current
   and (max-width: 1155px)
   {
     .hebergement{
-      flex-direction: column
+      flex-direction: column-reverse;
+      margin-bottom: 15px;
     }
     .marseille
     {
