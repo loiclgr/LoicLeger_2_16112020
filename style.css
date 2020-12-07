@@ -5,7 +5,8 @@ body {
 h2 {
   font-weight: 600;
 }
-* {
+*
+{
   box-sizing: border-box;
 }
 .content {
@@ -13,52 +14,49 @@ h2 {
   max-width: 1920px;
   margin: auto;
   margin-bottom: 35px;
+ 
 }
-.padmobil {
+.padmobil
+{
   padding: 8px;
 }
-.padmobil h2 {
-  font-weight: 800;
-}
-
 p {
   font-weight: normal;
   color: black;
+
 }
 #blockpage {
   margin: auto;
   width: 100%;
 }
 .logosite {
-  height: 65px;
+
+  height: 40px;
   padding: 8px;
 }
-nav {
+nav
+{
   display: flex;
   margin-top: -75px;
 }
 nav ul {
   list-style-type: none;
-  display: flex;
+    display: flex;
+
 }
 nav a {
   display: block;
-  color: #333333;
-  text-decoration: none;
-  padding: 20px 50px 0px 50px;
-  font-weight: 600;
-}
-nav li.current a,
-nav p a {
   color: #5691e9;
-  font-weight: 700;
+  text-decoration: none;
+  padding: 30px 50px 0px 50px;
 }
-
-nav p {
+nav p
+{
   padding-right: 5px;
 }
-li.current {
-  border-top: 1px rgb(5, 104, 252) solid;
+li.current
+{
+  border-top: 1px blue solid;
 }
 header {
   display: flex;
@@ -68,41 +66,33 @@ header {
   max-width: 1920px;
   margin: auto;
 }
-.blocsearch {
+.blocsearch
+{
   display: flex;
   justify-content: flex-start;
   color: rgb(5, 104, 252);
   align-items: center;
 }
-input {
+input
+{
   border: 1px solid rgb(242, 242, 242);
   padding: 9px;
 }
-button {
-  background-color: rgb(5, 104, 252);
-  color: white;
-  border-radius: 0px 10px 10px 0px;
-  border: 0;
-  padding: 10px;
-}
-button:active {
-  background-color: rgb(6 68 161);
-}
-button .fas {
-  display: none;
-  color: white;
-}
-button p {
-  margin: 0;
-  color: white;
-}
-
-#geo {
+button{
+background-color: rgb(5, 104, 252);
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    border: 0;
+    padding: 10px;
+  }
+#geo
+{
   background-color: rgb(242, 242, 242);
   padding: 8px;
-  border-radius: 9px 0px 0px 9px;
+  border-radius: 9px 0px 0px 9px
 }
-#geo .fas {
+#geo .fas
+{
   color: black;
 }
 .filtres {
@@ -124,15 +114,13 @@ button p {
   margin-left: 20px;
   height: 40px;
   padding: 0 11px 0 50px;
-  font-weight: 600;
-  white-space: nowrap;
 }
 
 .filtres li i {
   border: 2px rgb(222, 235, 255) solid;
   background-color: rgb(222, 235, 255);
   border-radius: 50%;
-  color: rgb(5, 104, 252) ;
+  color: blrgb(5, 104, 252) ue;
   width: 40px;
   height: 40px;
   display: flex;
@@ -141,9 +129,8 @@ button p {
   position: absolute;
   left: -3px;
 }
-.filtres li:hover  {
-  background-color: rgb(5, 104, 252);
-  color:white
+.filtres li:hover i {
+  color: white;
 }
 #info {
   color: rgb(5, 104, 252);
@@ -151,9 +138,11 @@ button p {
   text-align: center;
   margin-right: 10px;
 }
-#pinfo {
+#pinfo
+{
   display: flex;
   align-items: flex-start;
+
 }
 .hebergement {
   display: flex;
@@ -194,7 +183,7 @@ button p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
+  
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -213,15 +202,14 @@ button p {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
-.descriptionimage h3 {
-  margin: 10px 0px;
-}
+
 aside {
   background-color: rgb(242, 242, 242);
   border-radius: 15px;
 }
 #populaires {
   padding: 25px 25px;
+  
 }
 #titrepop i {
   color: black;
@@ -232,26 +220,12 @@ aside {
   display: flex;
   justify-content: space-between;
 }
-[data-expand-target] {
-  overflow: hidden;
-  position: relative;
-}
-
-[data-expand-link]:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-}
 .blocaside {
   display: FLEX;
   flex-direction: row;
   width: 100%;
   box-sizing: border-box;
-  height: 170px;
+  height: 169px;
   padding-bottom: 0px;
   margin: 25px 0px;
 }
@@ -281,7 +255,7 @@ aside {
 .fas {
   color: #0065fc;
 }
-.quatreetoiles .quatre {
+.quatreetoiles #quatre {
   color: #d9d9d9;
 }
 .activites {
@@ -360,46 +334,47 @@ footer {
   #blockpage {
     width: auto;
   }
-  .content {
+  .content
+  {
     width: 100%;
   }
   header {
     display: flex;
     flex-direction: column;
     align-items: start;
-    position: relative;
+    position:relative;
     width: 100%;
+    
   }
-  nav {
+  nav{
     flex-direction: column-reverse;
     align-items: flex-end;
     width: 100%;
   }
 
-  nav ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  nav li {
-    flex: 1;
-    text-align: center;
-    border-top: 0;
-    border-bottom: 3px grey solid;
-  }
-  button span {
-    display: none;
-  }
-  button .fas {
-    display: block;
-  }
-  nav a {
-    padding: 30px 0px;
-  }
-  li.current {
-    border-top: 0;
-    border-color: blue;
-  }
+nav ul { 
+
+  width: 100%;
+  margin: 0;
+  padding:0;
+}
+nav li
+{
+  flex:1;
+  text-align: center;
+  border-top: 0;
+  border-bottom: 3px grey solid;
+  
+}
+nav a {
+ 
+  padding: 30px 0px;
+}
+li.current
+{
+  border-top: 0;
+  border-color: blue;
+}
   .filtres {
     flex-direction: column;
   }
@@ -440,10 +415,10 @@ footer {
   }
   .bloc {
     width: 100%;
-    text-align: left;
   }
-  .bloc img {
-    max-height: 130px;
+  .bloc img
+  {
+  max-height: 200px;
   }
   .bloc-conteuneur {
     display: flex;
@@ -482,18 +457,21 @@ footer {
     display: inline-block;
   }
 }
-@media only screen and (min-width: 813px) and (max-width: 1155px) {
-  .hebergement {
-    flex-direction: column-reverse;
-  }
-  .marseille {
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-  .bloc-conteuneur {
-    display: flex;
+@media only screen
+  and (min-width: 813px)
+  and (max-width: 1155px)
+  {
+    .hebergement{
+      flex-direction: column
+    }
+    .marseille
+    {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+    .bloc-conteuneur{
+      display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
@@ -502,20 +480,8 @@ footer {
     margin: auto;
     padding: 0%;
     max-width: 90%;
+    }
+    .bloc img{
+      max-height: 300px;
+    }
   }
-  .bloc img {
-    max-height: 300px;
-  }
-  .bloc {
-    width: 45%;
-  }
-  .blocconteneur {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .blocaside {
-    width: 70%;
-    text-align: center;
-  }
-} 
