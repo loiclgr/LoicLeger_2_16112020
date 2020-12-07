@@ -492,7 +492,6 @@ footer {
     margin-bottom: 25px;
     margin-top: 25px;
 }
-  }
   .bloc-conteuneur {
     display: flex;
     flex-direction: column;
@@ -519,4 +518,4 @@ footer {
     width: 70%;
     text-align: center;
   }
-}
+} 
