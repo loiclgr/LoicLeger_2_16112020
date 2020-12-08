@@ -85,6 +85,10 @@ background-color: rgb(5, 104, 252);
     border: 0;
     padding: 10px;
   }
+button .fas{
+  display: none;
+  color: white;
+}
 #geo
 {
   background-color: rgb(242, 242, 242);
@@ -370,6 +374,12 @@ nav a {
  
   padding: 30px 0px;
 }
+button span{
+  display: none
+}
+button .fas{
+  display: block
+}
 li.current
 {
   border-top: 0;
@@ -415,6 +425,7 @@ li.current
   }
   .bloc {
     width: 100%;
+    font-size: smaller;
   }
   .bloc img
   {
@@ -461,9 +472,25 @@ li.current
   and (min-width: 813px)
   and (max-width: 1155px)
   {
+    button .fas{
+      display: none
+    }
     .hebergement{
       flex-direction: column-reverse;
       margin-bottom: 15px;
+    }
+    .blocconteneur{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .blocaside{
+      width: 70%;
+    }
+    aside
+    {
+      margin-bottom: 25px;
     }
     .marseille
     {
@@ -485,4 +512,8 @@ li.current
     .bloc img{
       max-height: 300px;
     }
+    .marseille .bloc {
+    width: 45%;
+    }
+
   }
