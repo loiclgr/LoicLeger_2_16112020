@@ -553,30 +553,17 @@ li.current
   @media only screen
   and (min-width: 1156px)
   and (max-width: 1600px){
-    .bloc-conteuneur{
-      display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: white;
-    border: 0;
-    margin: auto;
-    padding: 0%;
-    max-width: 90%;
-    }
+    
     .marseille
     {
       max-width: 65%;
-    
     }
     .blocaside{
       height: 200px;
       margin-bottom: 75px;
       margin-top: 25px
     }
-    .bloc img{
-      max-height: 300px;
-    }
+    
     .marseille .bloc {
     width: 45%;
     }
