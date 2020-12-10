@@ -31,11 +31,12 @@ p {
 }
 .logosite {
 
-  height: 40px;
+  height: 55px;
   padding: 8px;
 }
 nav
 {
+  font-weight: 700;
   display: flex;
   margin-top: -75px;
 }
@@ -46,17 +47,28 @@ nav ul {
 }
 nav a {
   display: block;
-  color: #5691e9;
+  color: black;
   text-decoration: none;
-  padding: 30px 50px 0px 50px;
+  padding: 18px 50px 0px 50px;
 }
 nav p
 {
   padding-right: 5px;
 }
+nav p a{
+  color:  rgb(5, 104, 252)
+}
 li.current
 {
-  border-top: 1px blue solid;
+  border-top: 2px white solid;
+}
+li.current:hover{
+  border-color: rgb(5, 104, 252);
+  color: #5691e9;
+  
+}
+nav li.current a:hover{
+color: #5691e9;
 }
 header {
   display: flex;
@@ -84,6 +96,10 @@ background-color: rgb(5, 104, 252);
     border-radius: 0px 10px 10px 0px;
     border: 0;
     padding: 10px;
+  }
+button:active{
+  background-color: rgb(0 74 185);
+  transition: background-color 0.5s ease-out;
   }
 button .fas{
   display: none;
@@ -118,13 +134,14 @@ button .fas{
   margin-left: 20px;
   height: 40px;
   padding: 0 11px 0 50px;
+  font-weight: 700;
 }
 
 .filtres li i {
   border: 2px rgb(222, 235, 255) solid;
   background-color: rgb(222, 235, 255);
   border-radius: 50%;
-  color: blrgb(5, 104, 252) ue;
+  color: rgb(5, 104, 252);
   width: 40px;
   height: 40px;
   display: flex;
@@ -133,11 +150,13 @@ button .fas{
   position: absolute;
   left: -3px;
 }
-.filtres li:hover i {
-  color: white;
+.filtres li:hover  {
+  background-color: rgb(5, 104, 252);
+  color : white
+  ;
 }
 #info {
-  color: rgb(5, 104, 252);
+  color: rgb(222, 235, 255);
   border-radius: 50%;
   text-align: center;
   margin-right: 10px;
@@ -153,7 +172,6 @@ button .fas{
   justify-content: space-between;
   margin-bottom: 60px;
 }
-
 .marseille {
   border: 1px rgb(242, 242, 242) solid;
   border-radius: 15px;
@@ -170,6 +188,7 @@ button .fas{
   flex-wrap: wrap;
   justify-content: space-between;
   height: 80%;
+  padding: 0;
 }
 .bloc {
   border-radius: 15px;
@@ -206,7 +225,20 @@ button .fas{
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
+[data-expand-target]{
+  overflow:hidden;
+  position:relative;
+}
 
+[data-expand-link]:after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:10;
+}
 aside {
   background-color: rgb(242, 242, 242);
   border-radius: 15px;
@@ -367,13 +399,14 @@ nav li
   flex:1;
   text-align: center;
   border-top: 0;
-  border-bottom: 3px grey solid;
+  border-bottom: 3px #f2f2f2 solid;
   
 }
 nav a {
  
   padding: 30px 0px;
 }
+
 button span{
   display: none
 }
@@ -383,7 +416,7 @@ button .fas{
 li.current
 {
   border-top: 0;
-  border-color: blue;
+  border-color: grey;
 }
   .filtres {
     flex-direction: column;
@@ -499,7 +532,7 @@ li.current
       margin-bottom: 25px;
     }
     .bloc-conteuneur{
-      display: flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
@@ -516,4 +549,43 @@ li.current
     width: 45%;
     }
 
+  }
+  @media only screen
+  and (min-width: 1156px)
+  and (max-width: 1600px){
+    .bloc-conteuneur{
+      display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    border: 0;
+    margin: auto;
+    padding: 0%;
+    max-width: 90%;
+    }
+    .marseille
+    {
+      max-width: 65%;
+    
+    }
+    .blocaside{
+      height: 200px;
+      margin-bottom: 75px;
+      margin-top: 25px
+    }
+    .bloc img{
+      max-height: 300px;
+    }
+    .marseille .bloc {
+    width: 45%;
+    }
+    .blocconteneur{
+      margin-top: 60px;
+    }
+    .hebergement{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
   }

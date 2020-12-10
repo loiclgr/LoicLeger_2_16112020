@@ -23,7 +23,7 @@
               <li class="current">
                 <a href="#hebergement">Hébergements</a>
               </li>
-              <li>
+              <li class="current">
                 <a href="#activites">Activités</a>
               </li>
             </ul>
@@ -56,11 +56,11 @@
         logements sont disponibles dans cette ville
       </p>
 
-      <div class="hebergement content">
+      <section class="hebergement content">
         <div class="marseille">
           <h2><strong>Hébergements à Marseille</strong></h2>
-          <div class="bloc-conteneur">
-            <div class="bloc"><a href="">
+          <ul class="bloc-conteneur">
+            <li class="bloc"><a href="">
               <div class="blockimage">
                 <img
                   src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -78,9 +78,9 @@
                   <i id="quatre" class="fas fa-star"></i>
                 </p>
               </div>
-            </a></div>
+            </a></li>
 
-            <div class="bloc"><a href="">
+            <li class="bloc"><a href="">
               <div class="blockimage">
                 <img
                   src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
@@ -98,9 +98,9 @@
                   <i class="fas fa-star"></i>
                 </p>
               </div>
-            </a></div>
+            </a></li>
 
-            <div class="bloc"><a href="">
+            <li class="bloc"><a href="">
               <div class="blockimage">
                 <img
                   src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
@@ -118,9 +118,9 @@
                   <i id="quatre" class="fas fa-star"></i>
                 </p>
               </div>
-            </a></div>
+            </a></li>
 
-            <div class="bloc"><a href="">
+            <li class="bloc"><a href="">
               <div class="blockimage">
                 <img
                   src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
@@ -138,9 +138,9 @@
                   <i id="quatre" class="fas fa-star"></i>
                 </p>
               </div>
-            </a></div>
+            </a></li>
 
-            <div class="bloc"><a href="">
+            <li class="bloc"><a href="">
               <div class="blockimage">
                 <img
                   src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
@@ -158,9 +158,9 @@
                   <i id="quatre" class="fas fa-star"></i>
                 </p>
               </div>
-            </a></div>
+            </a></li>
 
-            <div class="bloc"><a href="">
+            <li class="bloc"><a href="">
               <div class="blockimage">
                 <img
                   src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
@@ -178,8 +178,8 @@
                   <i id="quatre" class="fas fa-star"></i>
                 </p>
               </div>
-            </a></div>
-          </div>
+            </a></li>
+          </ul>
           <h3><strong>Afficher plus</strong></h3>
         </div>
 
@@ -189,7 +189,7 @@
             <i class="fas fa-chart-line fa-lg"></i>
           </div>
           <div class="blocconteneur">
-            <div class="bloc blocaside">
+            <div class="bloc blocaside" data-expand-target>
               <div class="blockimage">
                 <img
                   src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -197,9 +197,9 @@
               </div>
 
               <div class="descriptionimage">
-                <h3>Hôtel Le soleil du matin</h3>
+                <a href="" data-expand-link><h3>Hôtel Le soleil du matin</h3></a>
                 <p class="note">Nuit à partir de 128€</p>
-                <p class="cinqetoiles">
+                <p>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -209,7 +209,7 @@
               </div>
             </div>
 
-            <div class="bloc blocaside">
+            <div class="bloc blocaside" data-expand-target>
               <div class="blockimage">
                 <img
                   src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
@@ -217,7 +217,7 @@
               </div>
 
               <div class="descriptionimage">
-                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                <a href="" data-expand-link><h3>Au coeur de l'eau Chambres d'hôtes</h3></a>
                 <p class="note">Nuit à partir de 71€</p>
                 <p class="quatreetoiles">
                   <i class="fas fa-star"></i>
@@ -229,7 +229,7 @@
               </div>
             </div>
 
-            <div class="bloc blocaside">
+            <div class="bloc blocaside" data-expand-target>
               <div class="blockimage">
                 <img
                   src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
@@ -237,7 +237,7 @@
               </div>
 
               <div class="descriptionimage">
-                <h3>Hôtel Tout Bleu et blanc</h3>
+                <a href="" data-expand-link><h3>Hôtel Tout Bleu et blanc</h3></a>
                 <p class="note">Nuit à partir de 68€</p>
                 <p class="quatreetoiles">
                   <i class="fas fa-star"></i>
@@ -250,12 +250,12 @@
             </div>
           </div>
         </aside>
-      </div>
+      </section>
 
       <section class="activites content padmobil" id="activites">
         <h2>Activités à Marseille</h2>
         <div class="bloc-conteuneur">
-          <div class="bloc full" >
+          <div class="bloc full" data-expand-target >
             <div class="blockimage">
               <img
                 src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -263,12 +263,12 @@
             </div>
 
             <div class="descriptionimage">
-              <h3>Vieux port</h3>
+              <a href="" data-expand-link><h3>Vieux port</h3></a>
             </div>
           </div>
 
           
-            <div class="bloc" >
+            <div class="bloc" data-expand-target>
               <div class="blockimage">
                 <img
                   src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
@@ -276,11 +276,11 @@
               </div>
 
               <div class="descriptionimage">
-                <h3>Fort de Pomègues</h3>
+                <a href="" data-expand-link><h3>Fort de Pomègues</h3></a>
               </div>
             </div>
 
-            <div class="bloc" >
+            <div class="bloc" data-expand-target>
               <div class="blockimage">
                 <img
                   src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
@@ -288,12 +288,12 @@
               </div>
 
               <div class="descriptionimage">
-                <h3>Iles du Frioul</h3>
+                <a href="" data-expand-link><h3>Iles du Frioul</h3></a>
               </div>
             </div>
           
 
-          <div class="bloc full" >
+          <div class="bloc full" data-expand-target>
             <div class="blockimage">
               <img
                 src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
@@ -301,12 +301,12 @@
             </div>
 
             <div class="descriptionimage">
-              <h3>Parc National Des Calanques</h3>
+              <a href="" data-expand-link><h3>Parc National Des Calanques</h3></a>
             </div>
           </div>
 
           
-            <div class="bloc">
+            <div class="bloc" data-expand-target>
               <div class="blockimage">
                 <img
                   src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
@@ -314,11 +314,11 @@
               </div>
 
               <div class="descriptionimage">
-                <h3>Notre-Dame-De-La-Garde</h3>
+                <a href="" data-expand-link><h3>Notre-Dame-De-La-Garde</h3></a>
               </div>
             </div>
 
-            <div class="bloc" >
+            <div class="bloc" data-expand-target>
               <div class="blockimage" >
                 <img
                   src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
@@ -326,7 +326,7 @@
               </div>
 
               <div class="descriptionimage">
-                <h3>Parc Longchamp</h3>
+                <a href="" data-expand-link><h3>Parc Longchamp</h3></a>
               </div>
             </div>
         </div>
@@ -334,7 +334,7 @@
 
       <footer>
         <div id="footerconteuneur" class="content" >
-          <div class="menub" id="apropos">
+          <div class="menub">
             <ul>
               <li><h3>A propos</h3></li>
             
@@ -344,7 +344,7 @@
             </ul>
           </div>
 
-          <div class="menub" id="noshebergements">
+          <div class="menub">
             <ul>
               <li><h3>Nos hébergements</h3></li>
             
@@ -353,7 +353,7 @@
             </ul>
           </div>
 
-          <div class="menub" id="assistance">
+          <div class="menub">
             <ul>
               <li><h3>Assistance</h3></li>
             
